@@ -3059,6 +3059,65 @@ Variant with I2C interface</description>
 </package>
 </packages>
 </library>
+<library name="RNE1C101MDS1PX">
+<packages>
+<package name="CAPPRD200W50D500H1000">
+<circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.75" width="0.05" layer="39"/>
+<text x="-2.54368125" y="3.81551875" size="1.271840625" layer="25">&gt;NAME</text>
+<text x="-2.54503125" y="-3.817540625" size="1.272509375" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-3.01" y="0" radius="0.15" width="0.2" layer="21"/>
+<wire x1="-1.2" y1="1.6" x2="-1.2" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="1.2" x2="-0.8" y2="1.2" width="0.127" layer="21"/>
+<pad name="1" x="-1" y="0" drill="0.75" diameter="1.15" shape="square"/>
+<pad name="2" x="1" y="0" drill="0.75" diameter="1.15" rot="R180"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
+<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
+This library contains capacitors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
+<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
+<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
+<description>Generic 1005 (0402) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="0402"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3274,14 +3333,29 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="9.652" y="18.415" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="U$1" library="diy-modules" package="DISPLAY-OLED-128X64-I2C" value="DISPLAY-OLED-128X64-I2C" x="25.908" y="25.781" smashed="yes"/>
-<element name="BT1" library="BC2032-E2" package="MPD_BC2032-E2" value="BC2032-E2" x="25.781" y="13.716" smashed="yes" rot="MR0">
-<attribute name="DESCRIPTION" value=" BATTERY HOLDER COIN 20MM PC PIN " x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="BC2032-E2-ND" x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BC2032-E2/BC2032-E2-ND/2077836?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MF" value="MPD _Memory" x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="MP" value="BC2032-E2" x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="PACKAGE" value="None" x="25.781" y="13.716" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="30.78863125" y="0.9465" size="1.271940625" layer="28" rot="MR0"/>
+<element name="BT1" library="BC2032-E2" package="MPD_BC2032-E2" value="BC2032-E2" x="26.416" y="13.208" smashed="yes" rot="MR0">
+<attribute name="DESCRIPTION" value=" BATTERY HOLDER COIN 20MM PC PIN " x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="BC2032-E2-ND" x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/mpd-memory-protection-devices/BC2032-E2/BC2032-E2-ND/2077836?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MF" value="MPD _Memory" x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MP" value="BC2032-E2" x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PACKAGE" value="None" x="26.416" y="13.208" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="31.42363125" y="0.4385" size="1.271940625" layer="28" rot="MR0"/>
+</element>
+<element name="C1" library="RNE1C101MDS1PX" package="CAPPRD200W50D500H1000" value="RNE1C101MDS1PX" x="8.255" y="13.716" smashed="yes" rot="MR180">
+<attribute name="DESCRIPTION" value=" Cap Aluminum Polymer 100uF 16VDC 20% _5 X 10mm_ Radial 2mm 0.035 Ohm 2300mA 2000h 105C T/R " x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="493-3813-1-ND" x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/nichicon/RNE1C101MDS1PX/493-3813-1-ND/2239226?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="Nichicon" x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MP" value="RNE1C101MDS1PX" x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="8.37831875" y="10.40848125" size="1.271840625" layer="26" rot="MR180"/>
+<attribute name="PACKAGE" value="Radial Nichicon" x="8.255" y="13.716" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="5.70996875" y="17.533540625" size="1.272509375" layer="28" rot="MR180" align="top-left"/>
+</element>
+<element name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0402" package3d_urn="urn:adsk.eagle:package:37413/1" value="0.1uF" x="33.528" y="34.036" smashed="yes" rot="MR90">
+<attribute name="NAME" x="34.29" y="34.036" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-12416" x="33.528" y="34.036" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="32.766" y="34.036" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -3296,13 +3370,17 @@ design rules under a new name.</description>
 <wire x1="42.418" y1="32.385" x2="42.418" y2="36.576" width="0.4064" layer="16"/>
 <wire x1="42.418" y1="36.576" x2="42.164" y2="36.83" width="0.3048" layer="16"/>
 <wire x1="42.164" y1="36.83" x2="39.839" y2="36.83" width="0.4064" layer="16"/>
-<wire x1="16.891" y1="36.576" x2="34.544" y2="36.576" width="0.4064" layer="1"/>
+<wire x1="16.891" y1="36.576" x2="33.528" y2="36.576" width="0.4064" layer="1"/>
+<wire x1="33.528" y1="36.576" x2="34.544" y2="36.576" width="0.4064" layer="1"/>
 <wire x1="34.544" y1="36.576" x2="36.576" y2="38.608" width="0.4064" layer="1"/>
 <via x="36.576" y="38.608" extent="1-16" drill="0.35"/>
 <wire x1="39.839" y1="36.83" x2="39.839" y2="38.647" width="0.3048" layer="16"/>
 <wire x1="39.839" y1="38.647" x2="39.624" y2="38.862" width="0.3048" layer="16"/>
 <wire x1="39.624" y1="38.862" x2="36.83" y2="38.862" width="0.3048" layer="16"/>
 <wire x1="36.83" y1="38.862" x2="36.576" y2="38.608" width="0.3048" layer="16"/>
+<contactref element="C2" pad="2"/>
+<via x="33.528" y="36.576" extent="1-16" drill="0.35"/>
+<wire x1="33.528" y1="34.616" x2="33.528" y2="36.576" width="0.508" layer="16"/>
 </signal>
 <signal name="SCK">
 <contactref element="R1" pad="1"/>
@@ -3368,8 +3446,13 @@ design rules under a new name.</description>
 <via x="23.241" y="32.639" extent="1-16" drill="0.35"/>
 <wire x1="23.241" y1="32.639" x2="27.051" y2="32.639" width="0.4064" layer="1"/>
 <wire x1="27.051" y1="32.639" x2="27.051" y2="29.718" width="0.4064" layer="1"/>
-<wire x1="7.493" y1="13.716" x2="12.181" y2="13.716" width="0.6096" layer="16"/>
-<wire x1="2.794" y1="18.415" x2="7.493" y2="13.716" width="0.6096" layer="16"/>
+<wire x1="12.816" y1="16.383" x2="12.816" y2="13.208" width="0.6096" layer="16"/>
+<wire x1="12.816" y1="16.383" x2="11.8" y2="17.399" width="0.6096" layer="16"/>
+<wire x1="11.8" y1="17.399" x2="3.81" y2="17.399" width="0.6096" layer="16"/>
+<wire x1="2.794" y1="18.415" x2="3.81" y2="17.399" width="0.6096" layer="16"/>
+<contactref element="C1" pad="2"/>
+<wire x1="12.816" y1="13.208" x2="9.763" y2="13.208" width="0.508" layer="16"/>
+<wire x1="9.763" y1="13.208" x2="9.255" y2="13.716" width="0.508" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="R2" pad="1"/>
@@ -3388,10 +3471,8 @@ design rules under a new name.</description>
 <wire x1="24.638" y1="30.607" x2="24.511" y2="30.48" width="0.3048" layer="16"/>
 <wire x1="24.511" y1="30.48" x2="20.8216" y2="30.48" width="0.4064" layer="16"/>
 <wire x1="20.8216" y1="30.48" x2="20.8026" y2="30.499" width="0.3048" layer="16"/>
-<wire x1="43.688" y1="23.495" x2="41.021" y2="23.495" width="0.6096" layer="1"/>
-<wire x1="40.259" y1="24.257" x2="38.354" y2="24.257" width="0.6096" layer="1"/>
-<wire x1="41.021" y1="23.495" x2="40.259" y2="24.257" width="0.6096" layer="1"/>
-<wire x1="38.354" y1="24.257" x2="38.1" y2="24.511" width="0.6096" layer="1"/>
+<wire x1="43.688" y1="23.495" x2="39.116" y2="23.495" width="0.6096" layer="1"/>
+<wire x1="39.116" y1="23.495" x2="38.1" y2="24.511" width="0.6096" layer="1"/>
 <wire x1="38.1" y1="24.511" x2="38.1" y2="34.671" width="0.6096" layer="1"/>
 <via x="38.1" y="34.671" extent="1-16" drill="0.35"/>
 <wire x1="38.1" y1="34.671" x2="38.1" y2="36.791" width="0.6096" layer="16"/>
@@ -3411,8 +3492,13 @@ design rules under a new name.</description>
 <via x="24.003" y="28.829" extent="1-16" drill="0.35"/>
 <wire x1="20.8026" y1="28.899" x2="24.003" y2="28.899" width="0.4064" layer="16"/>
 <wire x1="24.003" y1="28.899" x2="24.003" y2="28.829" width="0.3048" layer="16"/>
-<wire x1="39.381" y1="13.716" x2="43.688" y2="18.023" width="0.6096" layer="1"/>
-<wire x1="43.688" y1="18.023" x2="43.688" y2="23.495" width="0.6096" layer="1"/>
+<wire x1="40.016" y1="13.208" x2="43.688" y2="16.88" width="0.6096" layer="1"/>
+<wire x1="43.688" y1="16.88" x2="43.688" y2="23.495" width="0.6096" layer="1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="7.255" y1="13.716" x2="2.54" y2="18.431" width="0.508" layer="1"/>
+<wire x1="4.191" y1="27.305" x2="6.985" y2="27.305" width="0.508" layer="1"/>
+<wire x1="2.54" y1="18.431" x2="2.54" y2="25.654" width="0.508" layer="1"/>
+<wire x1="2.54" y1="25.654" x2="4.191" y2="27.305" width="0.508" layer="1"/>
 </signal>
 <signal name="XTAL1">
 <contactref element="U1" pad="7"/>
@@ -3480,6 +3566,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="DTR">
 <contactref element="J1" pad="1"/>
+<contactref element="C2" pad="1"/>
+<wire x1="6.985" y1="19.685" x2="20.955" y2="19.685" width="0.508" layer="1"/>
+<wire x1="20.955" y1="19.685" x2="22.479" y2="18.161" width="0.508" layer="1"/>
+<wire x1="22.479" y1="18.161" x2="34.036" y2="18.161" width="0.508" layer="1"/>
+<wire x1="35.433" y1="19.558" x2="35.433" y2="30.988" width="0.508" layer="1"/>
+<wire x1="34.036" y1="18.161" x2="35.433" y2="19.558" width="0.508" layer="1"/>
+<via x="35.433" y="30.988" extent="1-16" drill="0.35"/>
+<wire x1="35.433" y1="30.988" x2="33.528" y2="32.893" width="0.508" layer="16"/>
+<wire x1="33.528" y1="32.893" x2="33.528" y2="33.456" width="0.508" layer="16"/>
 </signal>
 <signal name="RX">
 <contactref element="U1" pad="30"/>
