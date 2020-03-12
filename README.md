@@ -9,12 +9,14 @@ This is a simple electronic name badge designed by Omnitech Inc for the Microsof
 * USBTinyISP Programmer
 * USBTinyISP Driver [Download](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.4.0.0/adafruit_drivers_2.4.0.0.exe)
 * Arduino IDE
-* Adafruit SSD1306 Library
-* Low-Power Library
+* Adafruit SSD1306 Library [How to install libraries](https://www.arduino.cc/en/guide/libraries)
+* Low-Power Library [How to install libraries](https://www.arduino.cc/en/guide/libraries)
 * (optional) CR2032 Battery
 * (optional) [LCD Assistant](http://en.radzio.dxp.pl/bitmap_converter/)
 
 ## Instructions
+* Install all of the software listed above, including Arduino and the driver.
+* Install the arduino libraries. See [Here for instructions](https://www.arduino.cc/en/guide/libraries)
 * Plug the programmer into your computer via the included USB cable.
 * Connect your badge to the programmer using the included 6 pin ribbon cable.
 * The badge will power on if connected properly. If it does not, you may need to reverse the ribbon cable.
