@@ -8,7 +8,7 @@ This is a simple electronic name badge designed by Omnitech Inc for the Microsof
 * DigiGirlz Badge
 * USBTinyISP Programmer
 * USBTinyISP Driver [Download](https://github.com/adafruit/Adafruit_Windows_Drivers/releases/download/2.4.0.0/adafruit_drivers_2.4.0.0.exe)
-* Arduino IDE
+* Arduino IDE [Download Here](https://www.arduino.cc/download_handler.php)
 * Adafruit SSD1306 Library [How to install libraries](https://www.arduino.cc/en/guide/libraries)
 * Low-Power Library [How to install libraries](https://www.arduino.cc/en/guide/libraries)
 * (optional) CR2032 Battery
