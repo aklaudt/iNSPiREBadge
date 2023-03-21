@@ -14,7 +14,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #define LOGO_HEIGHT   64
 #define LOGO_WIDTH    128
 
-// The array below is a hexidecimal representation of the Omnitech Logo in 128x64 resolution
+// The array below is a hexidecimal representation of the Inspire Logo in 128x64 resolution
 static const unsigned char PROGMEM logo_bmp[] =
 {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
